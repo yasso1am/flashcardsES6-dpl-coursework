@@ -1,13 +1,40 @@
 <html>
   <head>
       <title> ES6 Flashcards </title>
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
       <link rel="stylesheet" href="./css/main.css" />
   </head>
   <body>
-    
+    <div class="container">
+      <h2> I am a flashcard app </h2>
+      
+          <div class="row">
+              <div class="input-field col s6 m4">
+                <input placeholder="Add a subject" id="subject" type="text" class="validate">
+                <label for="subject">Subject</label>
+              </div>
+              <div class="input-field col s6 m4">
+                <textarea id="question" class="materialize-textarea" placeholder="Go ahead and write a question"> </textarea>
+                <label for="question">Question</label>
+              </div>
+              <div class="input-field col s6 m4">
+                <input placeholder="What's the answer?" id="answer" type="text" class="validate">
+                <label for="subject">Answer</label>
+              </div>
+              <div>
+              <a class="btn-floating btn-large waves-effect waves-light red right" id="newcard"><i class="material-icons">add</i></a>
+              </div>
+          </div>
 
+        <div id="allthecards">
+            
+   
 
-
+   
+        </div>
+                  
+    <script type="text/javascript" src="js/materialize.min.js"></script>
     <script src="./jquery-3.3.1.min.js"></script>
     <script src="./js/main.js"></script>
   </body>
